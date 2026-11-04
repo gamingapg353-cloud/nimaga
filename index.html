@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodied - Restaurant</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-brand: #1f7a1f;
+            --color-brand-dark: #145214;
+            --color-ink: #1d1d1d;
+            --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-white font-sans text-ink overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="relative z-20">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold">Food<span class="text-brand">ied</span></a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#" class="text-brand">Home</a>
+                <a href="#" class="hover:text-brand">Menu</a>
+                <a href="#" class="hover:text-brand">Service</a>
+                <a href="#" class="hover:text-brand">Shop</a>
+                <a href="#" class="hover:text-brand">Blog</a>
+                <a href="#" class="hover:text-brand">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#" class="hidden sm:inline-block text-sm font-medium md:text-white hover:underline">Login</a>
+                <button class="md:hidden w-10 h-10 grid place-items-center rounded-md bg-brand text-white"
+                    aria-label="Menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="relative">
+            <!-- yashil fon -->
+            <div
+                class="hidden md:block absolute -top-24 right-0 w-[46%] h-[620px] bg-brand rounded-bl-[260px] rounded-tl-[60px]">
+            </div>
+
+            <div class="relative max-w-6xl mx-auto px-4 pt-8 pb-20 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-brand font-medium mb-4 flex items-center gap-2">
+                        <span class="w-8 h-0.5 bg-brand"></span> Healthy & Tasty
+                    </p>
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Enjoy Healthy Life & <span class="text-brand">Tasty</span> Food.
+                    </h1>
+                    <p class="text-gray-500 leading-relaxed mb-8 max-w-md">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa
+                        congue.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#"
+                            class="px-8 py-3 rounded-md bg-brand text-white font-medium shadow-lg shadow-brand/30 hover:bg-brand-dark transition">Show
+                            more</a>
+                        <a href="#"
+                            class="px-8 py-3 rounded-md border border-brand text-brand font-medium hover:bg-brand hover:text-white transition">Order
+                            now</a>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center py-10">
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-brand md:hidden">
+                    </div>
+
+                    <div class="relative w-72 h-72 md:w-[420px] md:h-[420px]">
+                        <!-- barglar (kosa orqasida) -->
+                        <img src="images/lettuce.png" alt=""
+                            class="absolute -left-12 -bottom-8 w-40 md:-left-20 md:-bottom-10 md:w-56">
+                        <img src="images/basil-1.png" alt=""
+                            class="absolute -left-10 top-4 w-24 md:-left-20 md:top-10 md:w-36 -rotate-[70deg]">
+                        <img src="images/basil-2.png" alt=""
+                            class="absolute right-2 -bottom-10 w-24 md:right-6 md:-bottom-16 md:w-36 rotate-[100deg]">
+
+                        <!-- kosa: stol ko'rinmasligi uchun kattalashtirib kesilgan -->
+                        <div class="relative w-full h-full rounded-full overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80"
+                                alt="Healthy salad bowl" class="w-full h-full object-cover scale-[1.2]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="max-w-6xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-14 items-center">
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Tacos"
+                    class="row-span-2 w-full h-full min-h-80 object-cover rounded-2xl">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Meat dish"
+                    class="w-full h-40 md:h-48 object-cover rounded-2xl">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Salad"
+                    class="w-full h-40 md:h-48 object-cover rounded-2xl">
+            </div>
+
+            <div>
+                <p class="text-brand font-medium mb-3 flex items-center gap-2">
+                    <span class="w-8 h-0.5 bg-brand"></span> About us
+                </p>
+                <h2 class="text-3xl md:text-4xl font-semibold italic leading-snug mb-6">
+                    <span class="text-brand">Food</span> is an Important<br> part Of a balanced Diet
+                </h2>
+                <p class="text-gray-500 leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa
+                    congue.
+                    Purus tellus at in hac quis. Massa congue ut tincidunt id sed malesuada.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#"
+                        class="px-8 py-3 rounded-md bg-brand text-white font-medium hover:bg-brand-dark transition">Show
+                        more</a>
+                    <a href="#" class="flex items-center gap-3 font-medium">
+                        <span
+                            class="w-11 h-11 rounded-full bg-brand text-white grid place-items-center shadow-lg shadow-brand/30">▶</span>
+                        Watch video
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOD CATEGORY -->
+        <section class="relative py-20">
+            <img src="images/leaf.png" alt="" class="hidden lg:block absolute left-0 -top-28 w-48">
+
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-semibold text-center mb-3">Food <span
+                        class="text-brand">category</span></h2>
+                <p class="text-gray-500 text-center max-w-lg mx-auto mb-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+
+                <div class="flex items-center gap-4">
+                    <button
+                        class="hidden md:grid shrink-0 w-11 h-11 place-items-center rounded-md border border-brand text-brand hover:bg-brand hover:text-white"
+                        aria-label="Previous">‹</button>
+
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 flex-1">
+                        <div
+                            class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden text-center">
+                            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500&q=80"
+                                alt="Red velvet cupcake"
+                                class="w-full h-44 object-cover group-hover:scale-105 transition">
+                            <h3 class="font-semibold py-4">Cupcake</h3>
+                        </div>
+                        <div
+                            class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden text-center">
+                            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500&q=80"
+                                alt="Red velvet cupcake"
+                                class="w-full h-44 object-cover group-hover:scale-105 transition">
+                            <h3 class="font-semibold py-4">Sweet dessert</h3>
+                        </div>
+                        <div
+                            class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden text-center">
+                            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500&q=80"
+                                alt="Red velvet cupcake"
+                                class="w-full h-44 object-cover group-hover:scale-105 transition">
+                            <h3 class="font-semibold py-4">Fresh vegetable</h3>
+                        </div>
+                        <div
+                            class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden text-center">
+                            <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=500&q=80"
+                                alt="Red velvet cupcake" alt="Pizza"
+                                class="w-full h-44 object-cover group-hover:scale-105 transition">
+                            <h3 class="font-semibold py-4">Fast food</h3>
+                        </div>
+                    </div>
+
+                    <button
+                        class="hidden md:grid shrink-0 w-11 h-11 place-items-center rounded-md bg-brand text-white hover:bg-brand-dark"
+                        aria-label="Next">›</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
